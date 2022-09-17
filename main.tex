@@ -1,0 +1,124 @@
+%-------------------------------
+%	BASIC TEMPLATE
+%   https://www.overleaf.com/latex/templates/
+%。         hw-template-for-machine-learning-1-uva/zsdcvnmbzzyh
+%-------------------------------
+\documentclass[a4paper]{article} 
+\input{head}
+
+\usepackage[UTF8]{ctex}
+
+%-------------------------------
+%	INDENT TWO CHARACTERS
+%-------------------------------
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+
+%-------------------------------
+%	CODE LISTING SETTING
+%   https://www.overleaf.com/latex/templates/programming-assignment-template/hkszvrpcgzzd
+%-------------------------------
+\usepackage{listings}
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    aboveskip={1.0\baselineskip},
+    belowskip={1.0\baselineskip},
+    columns=fixed,
+    extendedchars=true,
+    breaklines=true,
+    tabsize=4,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=lines,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    keywordstyle=\color[rgb]{0.627,0.126,0.941},
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{01,0,0},
+    numbers=left,
+    numberstyle=\small,
+    stepnumber=1,
+    numbersep=10pt,
+    captionpos=t,
+    escapeinside={\%*}{*)}
+}
+
+
+\begin{document}
+
+%-------------------------------
+%	TITLE SECTION
+%-------------------------------
+
+\fancyhead[C]{}
+\hrule \medskip % Upper rule
+\begin{minipage}{0.295\textwidth} 
+\raggedright
+\footnotesize
+YOUR NAME \hfill\\   
+STUDENT ID \hfill\\
+YOUR EMAIL
+\end{minipage}
+\begin{minipage}{0.4\textwidth} 
+\centering 
+\large 
+Homework Assignment 1\\ 
+\normalsize 
+System Programming in C Autumn 2022\\ 
+\end{minipage}
+\begin{minipage}{0.295\textwidth} 
+\raggedleft
+\today\hfill\\
+\end{minipage}
+\medskip\hrule 
+\bigskip
+
+%-------------------------------
+%	CONTENTS
+%-------------------------------
+
+\indent
+
+\section{First Exercise}
+
+
+\begin{lstlisting}[language=C++,label={list:first},caption=Sample C code -- Hello Wrold.]
+// This is a code sample.
+#include <stdio.h>
+void Print(void){
+    printf("Hello,world!\n");
+}
+
+int main(){
+    Print();
+
+    return 0;
+}
+\end{lstlisting}
+
+\blindtext
+\subsection{First Subtask}
+Some equations
+\begin{align*}
+y &=  \sum\limits_{i,k} m_i \cdot f^k \\
+x &=  
+\underset{11}{\underbrace{3 + 8}} + 5 + 7
+\end{align*}
+
+\subsection{Second Subtask}
+\blindtext
+
+\bigskip
+
+%------------------------------------------------
+
+\section{Second Exercise}
+\blindtext
+\subsection{First Subtask}
+
+\bigskip
+
+%------------------------------------------------
+
+\end{document}
